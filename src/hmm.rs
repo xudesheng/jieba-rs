@@ -56,7 +56,7 @@ include!(concat!(env!("OUT_DIR"), "/hmm_prob.rs"));
 
 const MIN_FLOAT: f64 = -3.14e100;
 
-pub(crate) struct HmmContext {
+pub struct HmmContext {
     v: Vec<f64>,
     prev: Vec<Option<State>>,
     best_path: Vec<State>,
